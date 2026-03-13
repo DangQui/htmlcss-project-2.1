@@ -101,3 +101,9 @@ a {
     font-weight: 600;
     margin-left: 24px;
 }
+
+.header .action-btn:hover {
+    opacity: 1;
+    background: var(--primary-color);
+    color: #fff;
+}
