@@ -17,8 +17,8 @@ body {
 
 /* COMMON */
 .main-content {
-    width: 1171px;
-    max-width: calc(100% -48px);
+    width: 1170px;
+    max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -45,17 +45,48 @@ a {
     opacity: 0.9;
 }
 
+.heading {
+    color: #0d1111;
+    font-weight: 700;
+}
+
+.heading.lv1 {
+    font-size: 6.2rem;
+    line-height: 1.16;
+}
+
+.heading.lv2 {
+    font-size: 4.2rem;
+    line-height: 1.33;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
 /* Header */
 .header.fixed {
     position: sticky;
     z-index: 999;
     top: -38px;
+    background: #fff;
 }
 
 .header .body {
     display: flex;
     align-items: center;
-    padding: 52px 0 50px;
+    padding: 52px 0 18px;
 }
 
 .header .nav ul {
@@ -106,4 +137,97 @@ a {
     opacity: 1;
     background: var(--primary-color);
     color: #fff;
+}
+
+/* Hero */
+.hero {
+    margin-top: 32px;
+}
+
+.hero .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .info {
+    width: 39%;
+}
+
+.hero .info .sub-title {
+    color: #767e7e;
+    font-size: 1.4rem;
+}
+
+.hero .info .heading {
+    margin-top: 18px;
+}
+
+.hero .desc {
+    width: 374px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    margin-top: 46px;
+}
+
+.hero .hero-cta {
+    display: flex;
+
+    margin-top: 52px;
+}
+
+.hero .hero-cta .btn-cta {
+    min-width: 186px;
+}
+
+.hero .hero-cta .btn-play {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    box-shadow: 0 22px 50px 0 rgba(0, 0, 0, 0.05);
+    margin-left: 50px;
+}
+
+.hero .hero-cta .btn-play:hover {
+    opacity: 0.9;
+}
+
+.hero .hero-thumb {
+    position: relative;
+    width: 55%;
+}
+
+.hero-thumb .hero-img {
+    width: 88%;
+    height: 631px;
+    object-fit: cover;
+    background: #e0f7f6;
+    float: right;
+}
+
+.hero-card {
+    position: absolute;
+    padding: 18px 25px;
+    background: #fff;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero-card.course {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    max-width: 157px;
+    border-radius: 18px;
+    top: 149px;
+}
+
+.hero-card.course .content {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 16px;
 }
