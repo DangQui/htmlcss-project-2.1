@@ -179,6 +179,7 @@ a {
 
 .hero .hero-cta .btn-cta {
     min-width: 186px;
+    line-height: 1.5;
 }
 
 .hero .hero-cta .btn-play {
@@ -225,9 +226,152 @@ a {
     top: 149px;
 }
 
+.hero-card .label {
+    display: flex;
+    justify-content: center;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 .hero-card.course .content {
     color: #0d1111;
     font-size: 1rem;
     font-weight: 500;
     line-height: 16px;
+}
+
+.hero-card.course .icon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-card.course .icon::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    border-radius: 999px;
+}
+
+.hero-card.card-schedules {
+    position: absolute;
+    bottom: 46px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero-card.card-schedules .charts {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-card.card-schedules .chart {
+    position: relative;
+    width: 74px;
+    height: 6px;
+    border-radius: 3px;
+    background: #edf1f5;
+}
+.hero-card.card-schedules .chart + .chart {
+    margin-top: 12px;
+}
+
+.hero-card.card-schedules .chart:last-child {
+    width: 26px;
+    height: 6px;
+}
+
+.hero-card.card-schedules .chart:first-child::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 39px;
+    height: 6px;
+    border-radius: 999px;
+    background: #fb9899;
+    top: 0;
+    left: 0;
+}
+
+.hero-card.card-schedules .chart:nth-child(2)::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 51px;
+    height: 6px;
+    border-radius: 999px;
+    background: #fb9899;
+    top: 0;
+    left: 0;
+}
+
+.hero-card.card-schedules .chart:nth-child(3)::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 6px;
+    border-radius: 999px;
+    background: #fb9899;
+    top: 0;
+    left: 0;
+}
+
+.hero-card.card-students {
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0 12px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero-card.card-students .label {
+    justify-content: flex-start;
+}
+
+.hero-card.card-students .avatar-group {
+    display: flex;
+    margin-top: 8px;
+}
+
+.hero-card.card-students .avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #1ebfc1;
+}
+
+.hero-card.card-students .avatar + .avatar {
+    margin-left: -7px;
+}
+
+.hero-card.card-students .avatar:nth-child(2) {
+    background: #ffc147;
+}
+
+.hero-card.card-students .avatar:nth-child(3) {
+    background: #ff947a;
+}
+
+.hero-card.card-students .avatar:nth-child(4) {
+    background: #bf83ff;
+}
+
+.hero-card.card-students p.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
 }
