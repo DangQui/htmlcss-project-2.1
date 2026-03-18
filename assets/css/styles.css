@@ -439,3 +439,130 @@ a {
     font-weight: 400;
     line-height: 1.69;
 }
+
+/* Courses */
+.courses {
+    margin-top: 130px;
+}
+
+.courses .heading {
+    margin-top: 18px;
+}
+
+.courses .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 19px;
+}
+
+.courses .content .desc {
+    width: 45%;
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: 1.78;
+}
+
+.courses .content .link {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.course-list {
+    display: flex;
+    gap: 47px;
+    margin-top: 79px;
+}
+
+.course-list .course-item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-shrink: 0;
+    width: calc(33.33% - 31.33px);
+}
+
+.course-list .thumb img {
+    width: 100%;
+    height: 393px;
+    border-radius: 8px;
+    opacity: 0.35;
+    background: #d0efed;
+    object-fit: cover;
+    object-position: center;
+}
+
+.course-list .thumb img:hover {
+    opacity: 1;
+}
+
+.course-list .info {
+    position: relative;
+    z-index: 1;
+    bottom: 37px;
+    width: 91%;
+    padding: 18px 25px 29px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 16px 90px 0 rgba(0, 0, 0, 0.05);
+}
+
+.course-list .info:hover ~ .thumb img {
+    opacity: 1;
+}
+
+.course-list .info .title {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.course-list .info .free {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.course-list .info .free strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.course-list .info .desc {
+    margin-top: 6px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.course-list .course-summary {
+    display: flex;
+    margin-top: 18px;
+    gap: 10px;
+}
+
+.course-list .course-summary li {
+    display: flex;
+    align-items: center;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.course-list .course-summary li::before {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 6px;
+}
