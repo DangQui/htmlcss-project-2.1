@@ -60,6 +60,9 @@ a {
     line-height: 1.33;
 }
 
+.heading.lv3 {
+}
+
 .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 1);
@@ -73,6 +76,13 @@ a {
 
 .line-clamp.line-3 {
     --line-clamp: 3;
+}
+
+.sub-heading {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 4.6px;
 }
 
 /* Header */
@@ -374,4 +384,58 @@ a {
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
+}
+
+/* Features */
+.features {
+    margin-top: 209px;
+}
+
+.features .body {
+    width: 84%;
+}
+
+.features .heading {
+    margin-top: 18px;
+    width: 577px;
+}
+
+.features .desc {
+    width: 590px;
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+.features .feature-list {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-list .item {
+    max-width: 223px;
+    border-radius: 12px;
+}
+
+.feature-list .item:hover {
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.feature-list .feature-title {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.feature-list .feature-desc {
+    margin-top: 16px;
+    color: #9da6a5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.69;
 }
