@@ -751,3 +751,44 @@ a {
     font-size: 1.8rem;
     line-height: normal;
 }
+
+/* Footer */
+.footer {
+    margin-top: 130px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer .list {
+    margin-top: 25px;
+    color: #535353;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.footer li + li {
+    margin-top: 18px;
+}
+
+.footer .column:last-child li {
+    display: flex;
+    gap: 9px;
+}
+
+.footer .copyright {
+    text-align: center;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    line-height: normal;
+    padding: 80px 0 50px;
+}
